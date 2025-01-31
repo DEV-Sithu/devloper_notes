@@ -1,6 +1,39 @@
-# devloper_notes
+၁။ REST ဆိုတာဘာလဲ။
+REST (Representational State Transfer) သည် အင်တာနက်ပေါ်ရှိ ဝန်ဆောင်မှုများ (Web Services) တည်ဆောက်ရန် အသုံးပြုသော စံပြပုံစံတစ်ခုဖြစ်သည်။ ၎င်းသည် HTTP methods (GET, POST, PUT, DELETE) များကို အသုံးပြု၍ အချက်အလက်များကို JSON သို့မဟုတ် XML ကဲ့သို့သော ပုံစံများဖြင့် ဖလှယ်သည်။ REST API သည် ရိုးရှင်းပြီး စကေးတက်လွယ်ကာ လူသုံးများသော API ပုံစံဖြစ်သည်။
 
-[MarkDown](https://www.markdownguide.org/cheat-sheet/)
+၂။ REST ၏ အခြေခံသဘောတရားများ
+၁. အခြေအနေမဲ့ ဆက်သွယ်မှု (Statelessness)
 
-# Api Service
-1. [Render](https://render.com/)
+Client ၏ တောင်းဆိုမှုတိုင်းတွင် လိုအပ်သောအချက်အလက်အားလုံး ပါရှိရမည်။ Server သည် အရင်တောင်းဆိုမှုများကို မှတ်သားထားခြင်းမရှိ။
+
+၂. Client-Server ခွဲခြားမှု
+
+Client (ဥပမာ - mobile app, website) နှင့် Server (အချက်အလက်သိုလှောင်ရုံ) တို့ကို သီးခြားစီထားရှိသည်။
+
+၃. ကက်ရှ်သိမ်းဆည်းနိုင်မှု (Cacheability)
+Server မှပြန်လည်ပေးပို့သော အဖြေများကို Client က ကက်ရှ်အဖြစ် သိမ်းဆည်းနိုင်သည်။
+
+၄. တူညီသော Interface
+
+အရင်းအမြစ်များကို URI ဖြင့်သတ်မှတ်ခြင်း (ဥပမာ - /users/123)
+
+HATEOAS - အဖြေများတွင် ဆက်လုပ်ဆောင်နိုင်သော လင့်ခ်များ ထည့်သွင်းပေးခြင်း။
+
+၃။ HTTP Methods များနှင့် အသုံးပြုပုံ
+Method	အဓိပ္ပာယ်	ဥပမာ
+GET	အချက်အလက်ရယူခြင်း	GET /users
+POST	အသစ်ဖန်တီးခြင်း	POST /users (JSON body)
+PUT	အရာအားလုံးကို အစားထိုးခြင်း	PUT /users/123
+PATCH	တစ်စိတ်တစ်ပိုင်းပြင်ခြင်း	PATCH /users/123
+DELETE	အရာကို ဖျက်ခြင်း	DELETE /users/123
+
+
+REST API တွင် အသုံးများသော Status Codes
+Code	အဓိပ္ပာယ်
+200	OK (အောင်မြင်ပါသည်)
+201	Created (အသစ်ဖန်တီးပြီး)
+400	Bad Request (တောင်းဆိုမှုမှားယွင်း)
+401	Unauthorized (ခွင့်ပြုချက်မရှိ)
+404	Not Found (ရှာမတွေ့)
+500	Server Error (Server အမှား)
+
