@@ -1,6 +1,8 @@
-# devloper_notes
+npm init -y
+npm install mongoose express
 
-[MarkDown](https://www.markdownguide.org/cheat-sheet/)
 
-# Api Service
-1. [Render](https://render.com/)
+project/
+  ├── models/         # MongoDB models (schemas)
+  ├── app.js          # Entry point
+  └── .env            # Environment variables
