@@ -5,8 +5,8 @@ NPM is a package manager for Node.js packages, or modules if you like.
 www.npmjs.com hosts thousands of free packages to download and use.
 The NPM program is installed on your computer when you install Node.js
 ```
-- npm install ( npm i packagename)
-- npm uninstall (npm uninstall packagename)
+- npm i packagename (Install package) aliases: add, i, in, ins, inst, insta, instal, isnt, isnta, isntal, isntall
+- npm rm packagename ( Uninstall Package) aliases: unlink, remove, rm, r, un
 - npm i packagename --save  (dependencies)
 - npm i packagename --save dev (dev dependenices)
 
