@@ -1,4 +1,16 @@
 # Node.js
+### What is NPM?
+```
+NPM is a package manager for Node.js packages, or modules if you like.
+www.npmjs.com hosts thousands of free packages to download and use.
+The NPM program is installed on your computer when you install Node.js
+```
+- npm install ( npm i packagename)
+- npm uninstall (npm uninstall packagename)
+- npm i packagename --save  (dependencies)
+- npm i packagename --save dev (dev dependenices)
+
+
 ### Template String (`) 1 key left or Esc key below
 - Templates allow single and double quotes inside a string:
 - let text = `He's often called "Johnny"`;
