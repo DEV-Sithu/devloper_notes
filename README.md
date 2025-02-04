@@ -4,9 +4,11 @@
 - let text = `He's often called "Johnny"`;
   
 ### Class
-```class ClassName {
+```
+class ClassName {
   constructor() { ... }
   method_1() { ... }
   method_2() { ... }
   method_3() { ... }
-}```
+}
+```
