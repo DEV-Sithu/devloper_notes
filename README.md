@@ -10,6 +10,8 @@ The NPM program is installed on your computer when you install Node.js
 - npm i packagename --save  (dependencies)
 - npm i packagename --save dev (dev dependenices)
 
+### Node.js Send an Email (nodemailer)
+
 
 ### Template String (`) 1 key left or Esc key below
 - Templates allow single and double quotes inside a string:
